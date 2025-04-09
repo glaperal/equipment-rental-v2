@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"], // Extend Next.js base config and add prettier
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "warn", // Show Prettier issues as warnings
+    // Add any project-specific ESLint rules here
+    "react/react-in-jsx-scope": "off", // Not needed with Next.js 17+ and new JSX transform
+    "@next/next/no-img-element": "off" // Allow regular img elements if needed
+  }
+}
